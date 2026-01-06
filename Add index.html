@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Image Studio Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1 id="title">AI Image Studio Pro</h1>
+  <button onclick="toggleLang()">বাংলা | English</button>
+</header>
+
+<nav>
+  <button onclick="showTab('gen')">AI Generator</button>
+  <button onclick="showTab('edit')">Photo Editing</button>
+</nav>
+
+<section id="gen" class="tab active">
+  <h2 id="genTitle">AI Image Generator</h2>
+  <textarea placeholder="Enter your prompt here..."></textarea>
+  <button>Generate Image</button>
+</section>
+
+<section id="edit" class="tab">
+  <h2 id="editTitle">Photo Enhancement</h2>
+  <input type="file">
+  <button>Enhance Photo</button>
+</section>
+
+<footer>
+  <p>© 2026 AI Image Studio Pro</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
